@@ -1,0 +1,23 @@
+<div class="modal fade" id="workone">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>了解更多</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card card-body">
+                    <img src="./images/work1.png" alt="" class="card-top-img">
+                    <h2 class="card-title">良好健康和福祉</h2>
+                    <h3>Good Health and Well-being</h3>
+                    <p class="card-text">確保健康的生活，促進各年齡階段人口的福祉</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn bgfirst text-light" data-bs-dismiss="modal">
+                    關閉
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./aos-2.3.2/dist/aos.css">
+    <link rel="stylesheet" href="./bootstrap-5.1.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./bootstrap-5.1.3/dist/js/bootstrap.js"></script>
+    <script src="./anime-3.2.1/lib/anime.js"></script>
+    <script src="./aos-2.3.2/dist/aos.js"></script>
+    <script src="./chart.js-3.9.1/dist/chart.js"></script>
+</head>
+
+<body>
+    <a id="top"></a>
+    <header class="header">
+        <div class="container-fluid navbar__bg">
+            <nav class="navbar container navbar-expand-xl navbar-dark">
+                <a href=""><img src="./images/logo.png" alt="" class="logo" height="50px"></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="link">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#top" class="nav-link nav__link">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link nav__link">SDGs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pg2" class="nav-link nav__link">環境保護</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link nav__link">社會進步</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item"
+                            onclick="window.open('index.html','_blank','top=100,left=200,width=500,height=700')">
+                            <a href="javascript://" class="nav-link">
+                                <img src="./images/phone.png" alt="" class="nav__icon phone">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#letten" class="nav-link">
+                                <img src="./images/letten.png" alt="" class="nav__icon letten">
+                            </a>
+                        </li>
+                        <li class="nav-link" onclick="dark(event)">
+                            <img src="./images/dark.png" alt="" class="nav__icon dark__icon">
+                        </li>
+                    </ul>
+                    <div class="search d-flex ms-xl-2">
+                        <input type="search" class="search__input" placeholder="搜尋...">
+                        <img src="./images/search.png" alt="" class="ms-2 search__icon">
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="carousel carousel-fade slide header__bg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/header_bg1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/headr_bg2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/headr_bg3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="header__section container m-auto">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 text-light">
+                    <h1 style="font-size:4em;">聯合國永續發展</h1>
+                    <h3>
+                        聯合國制定之17個永續發展目標(SDGs)涵蓋環境、
+                        經濟與社會等面向，鼓勵各界回應全球所面臨各項挑戰。
+                        環顧世界，過外已有多所頂尖大學以推動SDGs作為校級目標，動員力量，
+                        發揮知識影響力，促進社會與經濟發展，協助維護環境永續。
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <img src="./images/headaer.png" alt="" class="d-block mx-auto">
+                </div>
+            </div>
+        </section>
+    </header>
+    <a id="about"></a>
+    <main class="main">
+        <section class="container-fluid about__container">
+            <div class="container">
+                <h1 class="title text-center">關於SDGs</h1>
+                <p class="fs-3 mt-5">
+                    SDGs永續發展目標是什麼？由於氣候變遷、經濟成長、社會平權、
+                    貧富差距等難題如重兵壓境，2015年，聯合國宣布了「2030永續發展目標」（Sustainable
+                    Development Goals, SDGs），包含消除貧窮、減緩氣候變遷、促進性別平權等17項 SDGs 目標，
+                    指引全球共同努力、邁向永續。當時，有193個國家同意在2030年前，努力達成
+                    SDGs 17項目標。
+                </p>
+            </div>
+            <ul class="about__imgBox">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a id="pg2"></a>
+        </section>
+
+        <section class="container pg2__container">
+            <h1 class="title text-center mb-5">SDGs環境發展</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-12 pg2__box">
+                        <div class="pg2__item bgfirst rounded-pill">
+                            <h3 class="mb-0 me-5 pe-5">消費與生產</h3>
+                            <img src="images/pg2-1.png" alt="" class="pg2__img end-0">
+                        </div>
+                        <div class="pg2__item bgtwo rounded-pill">
+                            <h3 class="mb-0 me-5 pe-5">水下生命</h3>
+                            <img src="images/pg2-2.png" alt="" class="pg2__img pg2__img2 end-0">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 pg2__center">
+                        <div class="pg2Center__box w-100">
+                            <img src="./images/pg2-5.png" alt="" class="pg2Center__img w-100 h-100 rounded-circle">
+                        </div>
+                        <h1 class="text-center mt-3 pg2__h1">消費與生產</h1>
+                        <p class="fs-4 pg2__text">確保採用永續的消費和生產模式</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 pg2__box">
+                        <div class="pg2__item bgtwo rounded-pill">
+                            <h3 class="mb-0 ms-5 ps-5">氣候行動</h3>
+                            <img src="images/pg2-3.png" alt="" class="pg2__img pg2__img2 start-0">
+                        </div>
+                        <div class="pg2__item bgfirst rounded-pill">
+                            <h3 class="mb-0 ms-5 ps-5">陸域生命</h3>
+                            <img src="images/pg2-4.png" alt="" class="pg2__img start-0">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12"></div>
+                </div>
+            </div>
+            <a id="work"></a>
+        </section>
+        <section class="work__container container-fluid">
+            <h1 class="title text-center">SDGs社會進步</h1>
+            <div class="row">
+                <div class="work">
+                    <!-- <div class="work__item active">
+                        <img src="./images/work1.png" alt="" class="work__img">
+                        <h2 class="mt-3">良好健康和福祉</h2>
+                        <p class="fs-4 text-center">確保健康的生活，<br>促進各年齡階段人口的福祉</p>
+                        <button class="btn bgtwo text-light" data-bs-toggle="modal" data-bs-target="#workone">
+                            了解更多
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="modal fade" id="workone">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>了解更多</h2>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card card-body">
+                                <img src="./images/work1.png" alt="" class="card-top-img">
+                                <h2 class="card-title">良好健康和福祉</h2>
+                                <h3>Good Health and Well-being</h3>
+                                <p class="card-text">確保健康的生活，促進各年齡階段人口的福祉</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn bgfirst text-light" data-bs-dismiss="modal">
+                                關閉
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a id="letten"></a>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-sm-12 ">
+                    <form class="footer__form">
+                        <h1 class="colorfirst fw mb-5">留言反饋</h1>
+                        <div class="me-5">
+                            <label class="fs-4 text-dark">姓名</label>
+                            <input type="text" placeholder="name..." class="footer__name footer__input"
+                                required="required">
+                        </div>
+                        <div class="me-5">
+                            <label class="fs-4 text-dark">信箱</label>
+                            <input type="email" placeholder="gmail..." class="footer__gmail footer__input"
+                                required="required">
+                        </div>
+                        <div class="me-5">
+                            <label class="fs-4 text-dark">留言</label>
+                            <input type="text" placeholder="message..." class="footer__message footer__input"
+                                required="required">
+                        </div>
+                        <div class="my-5 footer__btnbox">
+                            <button class="btn bgtwo text-light" type="reset">重設</button>
+                            <input class="btn bgtwo text-light" type="submit" onclick="Lsubmit()" value="送出">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-5 col-sm-12 footer__board">
+                    <h1 class="colorfirst fw d-flex align-items-center">
+                        留言板
+                        <img src="./images/pen1.png" alt="" width="8%" height="5%" class="ms-2">
+                    </h1>
+                    <div class="footer__line mt-2 mb-3"></div>
+                    <div class="board">
+                        <!-- <div class="borad__box">
+                            <p>asdsfsaf</p>
+                            <p>asdsd@asdsd</p>
+                        </div>
+                        <p class="fs-4 borad__message ps-2">sadsadasd</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer__down pb-2">
+            <div class="wave"></div>
+            <div class="container">
+                <div class="row text-light">
+                    <div class="col-lg-4 col-sm-12">
+                        <h2>聯絡資訊</h2>
+                        <p class="fs-5">電話:(02)-1324-4567</p>
+                        <p class="fs-5">信箱:B029@gmail.com</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 footerDown__center">
+                        <p class="fs-5">©2022 B029</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 text-center">
+                        <h2 class="mb-5">關注我們</h2>
+                        <div class="footerDown__box">
+                            <img src="./images/fb.png" alt="" width="40px" class="footer__icon" data-bs-toggle="modal"
+                                data-bs-target="#nowifi">
+                            <img src="./images/ig.png" alt="" width="40px" class="footer__icon" data-bs-toggle="modal"
+                                data-bs-target="#nowifi">
+                            <img src="./images/line.png" alt="" width="40px" class="footer__icon" data-bs-toggle="modal"
+                                data-bs-target="#nowifi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="nowifi">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="d-flex align-items-center">您目前無網路連線
+                        <img src="./images/wifi.png" alt="" width="30x" class="ms-2">
+                    </h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text fs-4">請先檢查網路連線狀態後再試一次</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn bgfirst text-light" data-bs-dismiss="modal">
+                        關閉
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top -->
+    <div class="top__container rounded-circle bgtwo">
+        <a href="#top"><img src="./images/top.png" alt="" width="30px"></a>
+    </div>
+    <!-- robot -->
+    <div class="robot rounded-circle bgtwo" onclick="open_robot()">
+        <img src="./images/robot.png" alt="" width="30px">
+    </div>
+    <div class="robot__container">
+        <div class="robot__header text-light">
+            <h2>聊天機器人</h2>
+            <button class="btn-close robot__close" onclick="close_robot()"></button>
+        </div>
+        <div class=" robot__body">
+            <div>
+                <p class="robot__message w-100">
+                    您好，很高興為您服務，我是本網站的機器人，有任何問題都可以向我詢問!
+                </p>
+            </div>
+            <div class="w-100">
+                <p class="admin__message float-end">嗨嗨嗨嗨嗨嗨嗨嗨嗨哀哀哀哀哀嗨嗨嗨嗨嗨</p>
+            </div>
+        </div>
+        <div class="robot__footer">
+            <div class="robotBtn__box">
+                <div class="robot__btn bgfirst" onclick="robot_btn(0)">
+                    <a href="#pg2" class=" text-light">環境保護</a>
+                </div>
+                <div class="robot__btn bgfirst" onclick="robot_btn(1)">
+                    <a href="#activity" class=" text-light">活動參與</a>
+                </div>
+                <div class="robot__btn bgfirst" onclick="robot_btn(2)">
+                    <a href="#work" class=" text-light">社會進步</a>
+                </div>
+            </div>
+            <div class="robotIndex__box">
+                <input type="text" placeholder="請輸入訊息..." class="robot__input rounded-pill" onkeydown="inkey(event)">
+                <img src="./images/send.png" alt="" width="25px" onclick="send()">
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+</body>
+<script src="./index.js"></script>
+
+</html>
